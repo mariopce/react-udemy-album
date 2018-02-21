@@ -1,20 +1,14 @@
 // import a libraty to help create a component
-import React from 'react';
-import { Text, AppRegistry, View } from 'react-native';
+import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/Header';
 // create a component
-const App = () => (
-  <View>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    <Text>Some Text</Text>
-    </View>
-);
+export default class App extends Component {
+  render() {
+    return (
+      <Header/>
+    );
+  }
+}
 // render it to the device
 AppRegistry.registerComponent('albums', () => App);
