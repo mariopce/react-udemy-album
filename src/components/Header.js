@@ -4,11 +4,15 @@ import { Text, StyleSheet, View } from 'react-native';
 // Make a component
 export default class Header extends Component {
 
+  constructor(props) {
+   super(props);
+   this.state = { headerText: '' };
+ }
   render() {
     const { textStyle, viewStyle } = styles;
     return (
       <View style={viewStyle}>
-        <Text style={textStyle}>Albums!</Text>
+        <Text style={textStyle}>{this.props.headerText}</Text>
       </View>
     );
   }
