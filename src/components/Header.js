@@ -15,7 +15,18 @@ export default class Header extends Component {
 }
 const styles = StyleSheet.create({
     viewStyle: {
-      backgroundColor: '#f8f8f8'
+      backgroundColor: '#f8f8f8',
+      // This center only verticaly justifyContent: 'center'
+      //horisontal  alignItems: 'flex-end'
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 60, //px
+      paddingTop: 15,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.2,
+      elevation: 2,
+      position: 'relative',
     },
     textStyle: {
       fontSize: 20
